@@ -1,0 +1,11 @@
+groups:
+- name: BlockNumberNoIncr
+  rules:
+  - alert: BlockNumberNoIncrAlert
+    expr: (irate(block_number[1m]) or on() vector(0)) == 0
+    for: 1m
+    labels:
+      severity: 'critical'
+    annotations:
+      summary: "Block number stop increase"
+      description: "block_number is now: {{ $labels.instance }}, irate: {{ $value }}"
