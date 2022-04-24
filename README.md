@@ -1,6 +1,6 @@
-## darwinia-monitor
+## emerge-monitor
 
-darwinia-monitor is config tool, power by prometheus https://prometheus.io/ , grafana https://grafana.com/ docker https://www.docker.com/
+emerge-monitor is config tool, power by prometheus https://prometheus.io/ , grafana https://grafana.com/ docker https://www.docker.com/
 
 
 ## Reference
